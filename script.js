@@ -143,7 +143,7 @@ if (reservationForm && formMessage) {
     const guests = formData.get('guests')?.toString() || 'your group';
     const phone = formData.get('phone')?.toString().trim() || 'your phone number';
 
-    formMessage.textContent = `Thank you, ${name}! We’ve received your reservation request for ${date} for ${guests}. We’ll contact you on ${phone} shortly.`;
+    formMessage.textContent = `Thank you, ${name}! We've received your reservation request for ${date} for ${guests}. We'll contact you on ${phone} shortly.`;
     reservationForm.reset();
   });
 }
