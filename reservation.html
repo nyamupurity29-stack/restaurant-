@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kikao Chill & Vibe Rooftop | Reservation</title>
+    <meta
+      name="description"
+      content="Reserve your table at Kikao Chill & Vibe Rooftop and enjoy rooftop dining in Ruiru."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="reservation-page container">
+      <div class="reservation-grid">
+        <div>
+          <p class="eyebrow">Reserve your table</p>
+          <h1>Book a rooftop evening with us.</h1>
+          <p class="lead">
+            Whether it is a date night, birthday, or a big group dinner, we will prepare the perfect setup for you.
+          </p>
+          <div class="contact-list">
+            <a href="tel:+254722800080">📞 0722 800080</a>
+            <a href="https://wa.me/254722800080" target="_blank" rel="noreferrer">💬 WhatsApp us</a>
+            <span>📍 Ruiru Imani, Gichero Mall</span>
+          </div>
+        </div>
+
+        <div class="reservation-card">
+          <form id="reservationForm">
+            <label>
+              Full name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Phone number
+              <input type="tel" name="phone" placeholder="0712 345678" required />
+            </label>
+            <label>
+              Date
+              <input type="date" name="date" required />
+            </label>
+            <label>
+              Guests
+              <select name="guests">
+                <option>2 guests</option>
+                <option>4 guests</option>
+                <option>6 guests</option>
+                <option>8+ guests</option>
+              </select>
+            </label>
+            <label>
+              Special request
+              <textarea name="request" placeholder="Tell us about your celebration or preferences"></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send reservation</button>
+            <div id="formMessage" class="form-message" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
